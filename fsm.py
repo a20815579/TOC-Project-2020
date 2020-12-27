@@ -1,4 +1,4 @@
-from transitions.extensions import GraphMachine
+from transitions import Machine
 from flask import Flask, jsonify, request, abort, send_file
 from linebot import LineBotApi, WebhookParser
 from linebot.models import MessageEvent, TextMessage, TextSendMessage, MessageTemplateAction
@@ -121,15 +121,14 @@ def MyMachine():
 
         ],
         initial="user",
-        auto_transitions=False,
-        show_conditions=True,
+        auto_transitions=False
     )
     return machine
 
 
-class TocMachine(GraphMachine):
+class TocMachine(Machine):
     def __init__(self, **machine_configs):
-        self.machine = GraphMachine(model=self, **machine_configs)
+        self.machine = Machine(model=self, **machine_configs)
         self.food = ["https://goo.gl/maps/TtDyWTmLPqthFf8z8",
             "https://g.page/boiledfood?share",
             "https://goo.gl/maps/witZSExN6sJgHma18",
