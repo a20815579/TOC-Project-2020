@@ -23,5 +23,4 @@
 ![image](https://i.imgur.com/VIUbZ2m.jpg)
 ![image](https://i.imgur.com/4jY41RG.jpg)
 ![image](https://i.imgur.com/Yn5ipGD.jpg)
-![image](https://i.imgur.com/WKp4Rz6.jpg)
 ![image](https://i.imgur.com/8Wvhq1R.jpg)
